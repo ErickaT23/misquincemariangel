@@ -150,7 +150,7 @@ document.getElementById('show-wishes').addEventListener('click', () => {
 
   // --- Confirmaciones ---
   document.getElementById('rsvp-image').src = eventData.rsvp.rsvpImage;
-  document.getElementById('rsvp-message').innerText = "Para nosotros es muy importante que confirmes tu asistencia antes del 25 de noviembre, o bien indicarnos si no podrás acompañarnos.";
+  document.getElementById('rsvp-message').innerText = "Para nosotros es muy importante que confirmes tu asistencia antes del 01 de Diciembre, o bien indicarnos si no podrás acompañarnos.";
   document.getElementById('whatsapp-confirm').onclick = () => window.open(eventData.rsvp.whatsapp, '_blank');
 
   // --- Footer (redes sociales) ---

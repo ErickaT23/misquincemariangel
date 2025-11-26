@@ -31,12 +31,12 @@ export const eventData = {
       qrImage: "/images/QR.svg",
       uploadLink: "https://drive.google.com/drive/folders/1npfi7z66k4XTIEwHN-DeDZXbqhDhQFRD?usp=drive_link",
       uploadDescription: "¡Queremos ver las fotos de la mejor fiesta! Si tienes alguna foto que quieras compartir, por favor súbela aquí. ¡Gracias!",
-      hashtag: "#misquincevalentina"
+      hashtag: "#misquincemariangel"
     },
     finalMessage: "¡Gracias por ser parte de este día tan especial!",
     rsvp: {
       rsvpImage: "/images/rsvp.svg",
-      whatsapp: "https://wa.me/50259684301?text=Confirmo%20mi%20asistencia%20a%20los%20quince%20de%20Valentina%20Morán%20Lira",
+      whatsapp: "https://wa.me/50239019677?text=Hola,Confirmo%20mi%20asistencia%20a%20los%20quince%20de%20Mariangel",
     },
     footer: {
       social: {
