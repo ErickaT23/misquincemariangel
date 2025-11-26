@@ -1,0 +1,804 @@
+/* VARIABLES GLOBALES */
+:root {
+    /* Colores base estilo acuarela */
+    --background-color: white;
+    --beige: #f7e1d0;
+    --rosa: #f9d5d3;
+    --amarillo: #fff7cc;
+    --verde: #d5ead8;
+    --lila: #e9d4ef;
+    --text-color: #b38e3f;
+    --accent-color: #a6987b;
+    
+    /* Tipografías */
+    --font-title: "Allura", cursive;
+    --font-subtitle: "Cinzel", serif;
+    --font-body: "Nunito Sans", sans-serif;
+    
+    /* Tamaños de letra */
+    --font-size-title: 3rem;
+    --font-size-title-small: 2.5rem;
+    --font-size-subtitle: 2rem;
+    --font-size-text: 1rem;
+    
+    /* Otros */
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* RESET BÁSICO */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: var(--background-color);
+    font-family: var(--font-body);
+    color: var(--text-color);
+    overflow-x: hidden;
+  }
+  
+  /* SECCIONES GENERALES */
+  section {
+    text-align: center;
+  }
+  
+  h1, h2, h3 {
+    font-family: var(--font-title);
+    color: var(--text-color);
+  }
+  
+  h1 {
+    font-size: var(--font-size-title);
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: var(--font-size-subtitle);
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: var(--font-size-text);
+    margin-bottom: 10px;
+  }
+
+  /* SOBRE */
+/* Nuevo sobre estático */
+#envelope {
+  background-image: url(/images/FONDO-SOBRE.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* O cover según prefieras */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.envelope-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.envelope-title {
+  font-family: var(--font-title);
+  font-size: 2.3rem;
+  background: linear-gradient(90deg, #f5d7a1, #f2c678, #e6b64d,#f5d7a1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  padding: 15px;
+  margin-bottom: -20px;
+}
+
+.envelope-subtitle {
+  font-family: var(--font-title);
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #f5d7a1, #f2c678, #e6b64d,#f5d7a1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  padding: 15px;
+}
+
+#envelopeimage {
+  width: 370px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#envelopeimage:hover {
+  transform: scale(1.05);
+}
+
+.envelope-hint {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 1rem;
+  color: #555;
+  margin-top: 1rem;
+  background-color: rgba(249, 213, 211, 0.3); /* rosado suave */
+  padding: 8px 14px;
+  border-radius: 20px;
+}
+
+  /* Ocultar cuando abre */
+  .hidden {
+    display: none !important;
+  }
+  /* HERO (Foto inicial) */
+  #hero {
+    position: relative;
+    height:60vh;
+  }
+  #hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: -100px;
+  } 
+#hero {
+  background-image: url('/images/FPORTADA.svg'); /* Imagen personalizada */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.hero-text-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text-centered h1 {
+  margin-top: 0;
+  font-size: 2.8rem;
+  background: linear-gradient(90deg, #f5d7a1, #f2c678, #e6b64d,#f5d7a1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-family: var(--font-title);
+  padding: 15px;
+  margin-bottom: -20px;
+  margin-top: 80px;
+}
+
+.hero-text-centered h3 {
+  margin-top: 0;
+  font-size: 3.2rem;
+  background: linear-gradient(90deg, #f5d7a1, #f2c678, #e6b64d,#f5d7a1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-family: var(--font-title);
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.guest-info {
+  font-family: var(--font-title);
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #b76e79;
+}
+
+.guest-note {
+  font-size: 0.8rem;
+  font-style: italic;
+  color:var(--text-color);
+  max-width: 400px;
+  padding: 10px;
+}
+
+  /* SECCIÓN MÚSICA */
+  /* SECCIÓN INTRO (invitación, música, contador y bendición) */
+#intro-section {
+  background-image: url('/images/FONDO-INVI.svg'); /* Cambia la ruta según tu imagen */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  color: var(--text-color);
+  padding: 20px;
+}
+#intro-section p,
+#intro-section .label,
+#intro-section .number {
+  font-size: 1rem;
+  font-family: var(--font-body);
+  font-style: italic;
+}
+#calendar-button button {
+  padding: 12px 24px;
+  font-size: 0.9rem;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  font-family: var(--font-body);
+  transition: background 0.3s;
+  font-style: italic;
+}
+#calendar-button button:hover {
+  background-color: var(--text-color);
+}
+/* Música dentro de la sección */
+#music-section {
+  background: transparent;
+  padding: 20px 0;
+}
+#parents-blessing {
+  margin-top: 30px;
+}
+  button {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    font-family: var(--font-body);
+    transition: background 0.3s;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  button:hover {
+    background: var(--text-color);
+  }
+  /* PROGRESO DE MÚSICA */
+  #progress-container {
+    margin-top: 20px;
+  }
+  #progress-bar {
+    width: 80%;
+  }
+  /* Estilo para la barra de progreso (input range) */
+#progress-bar {
+  -webkit-appearance: none;
+  width: 80%;
+  height: 8px;
+  background: var(--beige); /* Color pastel base */
+  border-radius: 5px;
+  outline: none;
+  margin: 10px 0;
+}
+/* Riel (fondo) */
+#progress-bar::-webkit-slider-runnable-track {
+  background: var(--beige);
+  height: 8px;
+  border-radius: 5px;
+}
+/* Pulgarcito (el círculo que se mueve) */
+#progress-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #6b5c53;
+  cursor: pointer;
+  margin-top: -4px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+/* Para Firefox */
+#progress-bar::-moz-range-track {
+  background: var(--beige);
+  height: 8px;
+  border-radius: 5px;
+}
+#progress-bar::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #6b5c53;
+  cursor: pointer;
+}
+  /* SECCIÓN CONTADOR */
+  #marriage-announcement {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+  #marriage-announcement h2 {
+    font-family: var(--font-title);
+    font-size: var(--font-size-title);
+    color: var(--text-color);
+    margin-bottom: 10px;
+  }
+  #marriage-announcement p {
+    font-family: var(--font-body);
+    font-size: var(--font-size-text);
+    color: var(--text-color);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  #event-date p{
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #b76e79;
+}
+  #countdown {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .unit {
+    padding: 0;
+    border-radius: 100%;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--shadow);
+    background: linear-gradient(135deg, #b76e79, #f7c6c7, #e9c0ca, #b76e79);
+    opacity: 0.8; /* Solo opacidad al fondo */
+  }
+  .number {
+    font-size: 1.5rem;
+  }
+  .label {
+    font-size: 0.9rem;
+  }
+  #parents-blessing h2{
+    font-family: var(--font-title);
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin-bottom: 15px;
+  }
+  #parents-blessing p{
+    font-family: var(--font-title);
+    font-size: 2.3rem;
+    max-width: 600px;
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, #f5d7a1, #f2c678, #e6b64d,#f5d7a1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+  }
+  #oracion p{
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    color: var(--text-color);
+  }
+  /* INVITADO y PASES */
+  #guest-name-section {
+    background-color: rgb(255, 239, 254);
+    padding: 20px;
+  }
+  #passes-section{
+    background-color: rgb(249, 224, 247);
+    padding: 20px;
+  }
+  #guest-name-section p, #passes-section p {
+    font-size: var(--font-size-text);
+  }
+  /* ITINERARIO */
+  #itinerary-section {
+    background-image: url('/images/FONDO-INVI.svg'); /* Cambia la ruta según tu imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    color: var(--text-color);
+    padding: 20px;
+  }
+  #itinerary-section h2{
+    font-size: var(--font-size-title-small);
+  }
+  #itinerary-section p{
+    font-size: var(--font-size-text);
+  }
+  #ceremony img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: -30px;
+  }
+  #reception img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  #itinerary-section button {
+    margin-top: 10px;
+    font-family: var(--font-body);
+  }
+  /* LLUVIA DE SOBRES */
+  #gift-section {
+    background-image: url('/images/FONDO-INVI.svg'); /* Cambia la ruta según tu imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    color: var(--text-color);
+    padding: 20px;
+  }
+  #gift-section h2 {
+    font-size: var(--font-size-title-small);
+  }
+  #gift-section p {
+    font-size: var(--font-size-text);
+  }
+  #gift-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  #gift-section {
+    text-align: center;
+    padding: 30px 20px;
+  }
+  /* PLAYLIST */
+  #playlist-section {
+    background-image: url('/images/FONDO-INVI.svg'); /* Cambia la ruta según tu imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    color: var(--text-color);
+    padding: 20px;;
+  }
+  #playlist-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  #playlist-button{
+    margin-top: 10px;
+    font-family: var(--font-body);
+    font-size: var(--font-size-text);
+  }
+  #playlist-section h2{
+    font-size: var(--font-size-title-small);
+  }
+  #playlist-section p{
+    font-size: var(--font-size-text);
+  }
+  /* DRESS CODE */
+  #dresscode-section {
+    background-image: url('/images/FONDO-INVI.svg'); /* Cambia la ruta según tu imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    color: var(--text-color);
+    padding: 20px;
+  }
+  #dresscode-section h2{
+    font-size: var(--font-size-title-small);
+  }
+  #dresscode-section p{
+    font-size: var(--font-size-text);
+  }
+  #dresscode-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  #dresscode-inspo button{
+    margin-top: 10px;
+    font-family: var(--font-body);
+    font-size: var(--font-size-text);
+  }
+.hidden {
+  display: none !important;
+}
+  /* BUENOS DESEOS */
+  #wishes-section {
+    background-image: url('/images/FONDO-INVI.svg'); /* Cambia la ruta según tu imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    color: var(--text-color);
+    padding: 20px;
+  }
+  #wishes-section h2{
+    font-size: var(--font-size-title-small);
+  }
+  #wishes-section p{
+    font-size: var(--font-size-text);
+  }  
+  #show-wishes button {
+    margin-top: 20px;
+    font-family: var(--font-body);
+    font-size: var(--font-size-text);
+    margin-bottom: 20px;
+  }
+  #wish-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  #wish-form input,
+  #wish-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: var(--font-body, Arial, sans-serif);
+    font-size: 1rem;
+    background-color: #fff;
+    color: #6b5c53;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
+  }
+  
+  #wish-form textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  #wish-form button {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: background-color 0.3s ease;
+    font-family: var(--font-body, Arial, sans-serif);
+  }
+  
+  #wish-form button:hover {
+    background-color: var(--text-color);
+  }
+  
+  /* ÁLBUM */
+  #album-section {
+    background-image: url('/images/FONDO-INVI.svg'); /* Cambia la ruta según tu imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    color: var(--text-color);
+    padding: 20px;
+  }
+  #album-section h2{
+    font-size: var(--font-size-title-small);
+  }
+  #album-section h3{
+    font-size: var(--font-size-subtitle);
+  }
+  #qr-album {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  #album-section p{
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: var(--font-size-text);
+  }
+  #upload-photos{
+    font-size: 1rem;
+    padding: 12px 24px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    transition: background 0.3s;
+    font-family: var(--font-body);
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: var(--font-size-text);
+  }
+  /* CONFIRMACIÓN */
+  #rsvp-section {
+    background-image: url('/images/FONDO-INVI.svg'); /* Cambia la ruta según tu imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    color: var(--text-color);
+    padding: 20px;
+  }
+  #rsvp-section h2{
+    font-size: var(--font-size-title-small);
+  }
+  #rsvp-section p{
+    font-size: var(--font-size-text);
+  }
+  #rsvp-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  /* FOTO FINAL */
+  #final-photo-section{
+    padding: 0;
+    margin-bottom: 0;
+  }
+  #final-photo {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* FRASE FINAL */
+  #final-message-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 10px;
+    font-family: "Allura", cursive;
+  }
+#final-message-section p{
+  font-size: 2.3rem;
+  background: linear-gradient(90deg, #f5d7a1, #f2c678, #e6b64d,#f5d7a1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  padding: 15px;
+}
+  /* FOOTER */
+  #social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+  }
+
+  #footer {
+    background-color:#b76e79;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  #social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  #social-icons a {
+    color: white;
+    font-size: 2.5rem;
+    transition: color 0.3s;
+  }
+  
+  #social-icons a:hover {
+    color: white;
+  }
+  
+  .footer-logo img {
+    width: 100px;
+    height: auto;
+  }
+  
+  
+  /* ANIMACIONES SCROLL */
+  section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.2rem;
+    }
+    
+    h2 {
+      font-size: 1.5rem;
+    }
+    
+    p {
+      font-size: 1rem;
+    }
+    
+    #gallery-container img {
+      width: 150px;
+      height: 150px;
+    }
+    
+    .unit {
+      width: 75px;
+      height: 75px;
+    }
+  }
+  /* Popup de cuenta bancaria */
+#account-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.popup-content {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  max-width: 320px;
+  text-align: center;
+  font-family: var(--font-body);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  animation: fadeIn 0.4s ease;
+}
+
+.popup-content p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.popup-content button {
+  margin-top: 20px;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  background-color: var(--text-color);
+}
+
+.hidden {
+  display: none !important;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
