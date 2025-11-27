@@ -67,7 +67,7 @@
   /* SOBRE */
 /* Nuevo sobre estático */
 #envelope {
-  background-image: url(/images/FONDO-SOBRE.svg);
+  background-image: url(/images/portada.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; /* O cover según prefieras */
@@ -143,7 +143,6 @@
   /* HERO (Foto inicial) */
   #hero {
     position: relative;
-    height:60vh;
   }
   #hero img {
     width: 100%;
@@ -152,24 +151,23 @@
     margin-top: -100px;
   } 
 #hero {
-  background-image: url('/images/FPORTADA.svg'); /* Imagen personalizada */
+  background-image: url('/images/f-portada.png'); /* Imagen personalizada */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
   color: var(--text-color);
+  height: 850px;
 }
-
 .hero-text-centered {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
 .hero-text-centered h1 {
   margin-top: 0;
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   background: linear-gradient(90deg, #f5d7a1, #f2c678, #e6b64d,#f5d7a1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -177,13 +175,12 @@
   text-fill-color: transparent;
   font-family: var(--font-title);
   padding: 15px;
-  margin-bottom: -20px;
-  margin-top: 80px;
+  margin-bottom: -35px;
+  margin-top: 90px;
 }
-
 .hero-text-centered h3 {
   margin-top: 0;
-  font-size: 3.2rem;
+  font-size: 3rem;
   background: linear-gradient(90deg, #f5d7a1, #f2c678, #e6b64d,#f5d7a1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -193,26 +190,20 @@
   padding: 15px;
   margin-bottom: 20px;
 }
-
+#guest-name{
+  margin-top: 400px;
+}
 .guest-info {
   font-family: var(--font-title);
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   margin-bottom: 10px;
-  color: #e6b64d;
+  color:#c79325;
+  font-weight: bold;
 }
-
-.guest-note {
-  font-size: 0.8rem;
-  font-style: italic;
-  color:var(--text-color);
-  max-width: 400px;
-  padding: 10px;
-}
-
   /* SECCIÓN MÚSICA */
   /* SECCIÓN INTRO (invitación, música, contador y bendición) */
 #intro-section {
-  background-image: url('/images/FONDO-INVI.svg'); /* Cambia la ruta según tu imagen */
+  background-image: url('/images/fondoflores1.png'); /* Cambia la ruta según tu imagen */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -339,7 +330,7 @@
     font-family: var(--font-body);
     font-size: 1.2rem;
     margin-bottom: 10px;
-    color: #e6b64d;
+    color: #e6b64d ;
 }
   #countdown {
     display: flex;
@@ -378,7 +369,7 @@
     font-size: 2.3rem;
     max-width: 600px;
     margin-bottom: 30px;
-    background: linear-gradient(90deg, #f5d7a1, #f2c678, #e6b64d,#f5d7a1);
+    background: linear-gradient(90deg, #c79325, #e1a629, #a57a1e, #b38e3f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -404,7 +395,7 @@
   }
   /* ITINERARIO */
   #itinerary-section {
-    background-image: url('/images/FONDO-INVI.svg'); /* Cambia la ruta según tu imagen */
+    background-image: url('/images/fondoflores2.png'); /* Cambia la ruta según tu imagen */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -435,7 +426,7 @@
   }
   /* LLUVIA DE SOBRES */
   #gift-section {
-    background-image: url('/images/FONDO-INVI.svg'); /* Cambia la ruta según tu imagen */
+    background-image: url('/images/fondoflores1.png'); /* Cambia la ruta según tu imagen */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -460,7 +451,7 @@
   }
   /* PLAYLIST */
   #playlist-section {
-    background-image: url('/images/FONDO-INVI.svg'); /* Cambia la ruta según tu imagen */
+    background-image: url('/images/fondoflores2.png'); /* Cambia la ruta según tu imagen */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -486,7 +477,7 @@
   }
   /* DRESS CODE */
   #dresscode-section {
-    background-image: url('/images/FONDO-INVI.svg'); /* Cambia la ruta según tu imagen */
+    background-image: url('/images/fondoflores1.png'); /* Cambia la ruta según tu imagen */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -515,7 +506,7 @@
 }
   /* BUENOS DESEOS */
   #wishes-section {
-    background-image: url('/images/FONDO-INVI.svg'); /* Cambia la ruta según tu imagen */
+    background-image: url('/images/fondoflores2.png'); /* Cambia la ruta según tu imagen */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -547,7 +538,6 @@
     gap: 15px;
     text-align: center;
   }
-  
   #wish-form input,
   #wish-form textarea {
     width: 100%;
@@ -560,12 +550,10 @@
     color: #6b5c53;
     box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
   }
-  
   #wish-form textarea {
     resize: vertical;
     min-height: 120px;
   }
-  
   #wish-form button {
     padding: 12px 24px;
     font-size: 1.2rem;
@@ -585,7 +573,7 @@
   
   /* ÁLBUM */
   #album-section {
-    background-image: url('/images/FONDO-INVI.svg'); /* Cambia la ruta según tu imagen */
+    background-image: url('/images/fondoflores1.png'); /* Cambia la ruta según tu imagen */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -629,7 +617,7 @@
   }
   /* CONFIRMACIÓN */
   #rsvp-section {
-    background-image: url('/images/FONDO-INVI.svg'); /* Cambia la ruta según tu imagen */
+    background-image: url('/images/fondoflores2.png'); /* Cambia la ruta según tu imagen */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -656,8 +644,7 @@
   #final-photo {
     width: 100%;
     height: auto;
-  }
-  
+  }  
   /* FRASE FINAL */
   #final-message-section {
     background-size: cover;
@@ -682,43 +669,36 @@
     margin: 0 10px;
     font-size: 1.5rem;
   }
-
   #footer {
-    background-color:#e6b64d;
+    background-color:#e6b64d ;
     color: white;
     text-align: center;
     padding: 20px 0;
   }
-  
   #social-icons {
     display: flex;
     justify-content: center;
     gap: 20px;
   }
-  
   #social-icons a {
     color: white;
     font-size: 2.5rem;
     transition: color 0.3s;
   }
-  
   #social-icons a:hover {
     color: white;
   }
-  
   .footer-logo img {
     width: 100px;
     height: auto;
   }
-  
-  
   /* ANIMACIONES SCROLL */
   section {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s ease, transform 0.8s ease;
   }
-  
+
   section.visible {
     opacity: 1;
     transform: translateY(0);
@@ -749,50 +729,6 @@
     }
   }
   /* Popup de cuenta bancaria */
-#account-popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 10000;
-}
-
-.popup-content {
-  background: #fff;
-  border-radius: 12px;
-  padding: 30px 20px;
-  max-width: 320px;
-  text-align: center;
-  font-family: var(--font-body);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-  animation: fadeIn 0.4s ease;
-}
-
-.popup-content p {
-  margin-bottom: 10px;
-  font-size: 1rem;
-  color: var(--text-color);
-}
-
-.popup-content button {
-  margin-top: 20px;
-  background-color: var(--accent-color);
-  color: white;
-  padding: 10px 18px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.popup-content button:hover {
-  background-color: var(--text-color);
-}
-
 .hidden {
   display: none !important;
 }
