@@ -157,7 +157,7 @@
   background-position: center;
   text-align: center;
   color: var(--text-color);
-  height: 850px;
+  height: 900px;
 }
 .hero-text-centered {
   display: flex;
@@ -191,11 +191,11 @@
   margin-bottom: 20px;
 }
 #guest-name{
-  margin-top: 400px;
+  margin-top: 440px;
 }
 .guest-info {
   font-family: var(--font-title);
-  font-size: 1.9rem;
+  font-size: 2.2rem;
   margin-bottom: 10px;
   color:#c79325;
   font-weight: bold;
@@ -366,7 +366,7 @@
   }
   #parents-blessing p{
     font-family: var(--font-title);
-    font-size: 2.3rem;
+    font-size: 2rem;
     max-width: 600px;
     margin-bottom: 30px;
     background: linear-gradient(90deg, #c79325, #e1a629, #a57a1e, #b38e3f);
@@ -374,6 +374,7 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+    padding: 5px;
 
   }
   #oracion p{
