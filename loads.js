@@ -1,7 +1,7 @@
 const guests = [
   { id: "1", name: "Sr. Elmer Bladimir García y fam.", passes: 5 },
   { id: "2", name: "Lic. Virgilio Fernández Vásquez", passes: 2 },
-  { id: "3", name: "Amigos de Zona Vanguardia", passes: 1 },
+  { id: "3", name: "Amigos de Zona Vaquera", passes: 1 },
   { id: "4", name: "Señorita Alejandra Figueroa", passes: 2 },
   { id: "5", name: "Sr. Oscar Espina y fam.", passes: 5 },
   { id: "6", name: "Sr. Omero González", passes: 4 },
