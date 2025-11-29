@@ -38,7 +38,7 @@ const guests = [
   { id: "37", name: "Señorita Karla Vanegas", passes: 1 },
   { id: "38", name: "Sr. Leonel Meléndez", passes: 1 },
   { id: "39", name: "Sr. Fabián Gutiérrez", passes: 1 },
-  { id: "40", name: "Señora Hiroma Che", passes: 1 },
+  { id: "40", name: "Señora Hirma Che", passes: 1 },
   { id: "41", name: "Señorita Deysy Mayen", passes: 3 },
   { id: "42", name: "Sr. Luis Salguero y fam.", passes: 3 },
   { id: "43", name: "Sr. Max Monzón y fam.", passes: 5 },
