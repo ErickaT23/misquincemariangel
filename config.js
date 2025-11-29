@@ -36,7 +36,7 @@ export const eventData = {
     finalMessage: "¡Gracias por ser parte de este día tan especial!",
     rsvp: {
       rsvpImage: "/images/rsvp.svg",
-      whatsapp: "https://wa.me/50239019677?text=Hola,Confirmo%20mi%20asistencia%20a%20los%20quince%20de%20Mariangel",
+      whatsapp: "https://wa.me/50239019677?text=Hola,soy___ y%20confirmo%20mi%20asistencia%20a%20los%20quince%20de%20Mariangel",
     },
     footer: {
       social: {
