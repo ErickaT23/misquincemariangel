@@ -46,7 +46,10 @@ const guests = [
   { id: "45", name: "Tío Toñito Catalán", passes: 0 },
   { id: "46", name: "Tío Jorge Garrido", passes: 0 },
   { id: "47", name: "Tía Estela del Cid", passes: 0 },
-  { id: "48", name: "Tía Otilia Morales", passes: 0 }
+  { id: "48", name: "Tía Otilia Morales", passes: 0 },
+  { id: "49", name: "Señortia Debora Palencia Tovar", passes: 1 },
+  { id: "50", name: "Sr. José Lopez", passes: 2 },
+  { id: "51", name: "Adrián Carrera", passes: 2 }
 ];
 
   
